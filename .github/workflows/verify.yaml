@@ -1,15 +1,20 @@
-name: Build and publish package to TestPyPI
+name: Verify
 
 on:
   push:
-    branches:
+    branches-ignore:
+      - main
       - release-candidate
+  pull_request:
+    branches:
+      - main
+  workflow_call:
 
 jobs:
-  tests:
+  functional:
     uses: ./.github/workflows/_tests.yaml
-  build_and_publish:
-    needs: tests
+  packaging:
+    needs: functional
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -22,11 +27,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Install in editable mode
+      - name: Install
         run: pip install .[build]
-      - name: Build
-        run: package --build-number
-      - name: Publish to TestPyPI
-        uses: pypa/gh-action-pypi-publish@v1.9.0
-        with:
-          repository-url: https://test.pypi.org/legacy/
+      - name: Package
+        run: package --no-build
