@@ -1,11 +1,11 @@
-[![PyPI Package latest release](https://img.shields.io/pypi/v/package.svg)][1]
-[![PyPI Wheel](https://img.shields.io/pypi/wheel/package.svg)][1]
-[![Supported versions](https://img.shields.io/pypi/pyversions/package.svg)][1]
-[![Supported implementations](https://img.shields.io/pypi/implementation/package.svg)][1]
+[![PyPI Package latest release](https://img.shields.io/pypi/v/numba_linalg.svg)][1]
+[![PyPI Wheel](https://img.shields.io/pypi/wheel/numba_linalg.svg)][1]
+[![Supported versions](https://img.shields.io/pypi/pyversions/numba_linalg.svg)][1]
+[![Supported implementations](https://img.shields.io/pypi/implementation/numba_linalg.svg)][1]
 
-# Package <!-- omit in toc -->
+# Numba Linalg <!-- omit in toc -->
 
-Package is.
+Numba Linalg is.
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -23,24 +23,24 @@ Here's how you can start
 
 ### Installing
 
-Install Package with pip
+Install Numba Linalg with pip
 
 ```
-pip install package
+pip install numba_linalg
 ```
 
 ### Importing
 
-Import name is the same as install name, `package`.
+Import name is the same as install name, `numba_linalg`.
 
 ```python
-import package
+import numba_linalg
 ```
 
-Since the package is accessed often,  abbreviation `pkg` is used. The abbreviation is used throughout this document.
+Since the package is accessed often,  abbreviation `nl` is used. The abbreviation is used throughout this document.
 
 ```python
-import package as pkg
+import numba_linalg as nl
 ```
 
 ### Example
@@ -51,8 +51,8 @@ import package as pkg
 
 # Changelog <!-- omit in toc -->
 
-## 0.0.1 2024-12-16 <!-- omit in toc -->
+## 0.0.1 2025-02-24 <!-- omit in toc -->
 
-- Setup
+Initial release
 
-[1]: <https://pypi.org/project/package> "Project PyPI page"
+[1]: <https://pypi.org/project/numba_linalg> "Project PyPI page"
