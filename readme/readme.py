@@ -1,6 +1,6 @@
 import pathlib
 
-import package
+import numba_linalg as nl
 import yamdog as md
 from limedev import readme
 #=======================================================================
@@ -21,7 +21,7 @@ def main(pyproject: readme.PyprojectType) -> md.Document:
        '.'
     ])])
 
-    return readme.make(package, semi_description,
+    return readme.make(nl, semi_description,
                        name = name,
-                       abbreviation = 'pkg',
+                       abbreviation = 'nl',
                        quick_start = quick_start())
