@@ -1,4 +1,4 @@
-import package
+import numba_linalg as nl
 import pytest
 # ======================================================================
 parametrize = pytest.mark.parametrize
