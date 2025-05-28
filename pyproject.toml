@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "numba-linalg"
-description = ""
+description = "Collection of linear algebra tools using Numba and compatible with Numba"
 classifiers = [
     "Development Status :: 1 - Planning",
     "License :: OSI Approved :: MIT License",
